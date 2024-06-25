@@ -25,3 +25,18 @@ export function enableAdapter(): void;
 export function disableAdapter(): void;
 export function getAdapterState(): Promise<string>;
 export function isActive(): Promise<boolean>;
+
+declare const BLEAdvertiser: {
+    setCompanyId: typeof setCompanyId;
+    broadcast: typeof broadcast;
+    stopBroadcast: typeof stopBroadcast;
+    scan: typeof scan;
+    scanByService: typeof scanByService;
+    stopScan: typeof stopScan;
+    enableAdapter: typeof enableAdapter;
+    disableAdapter: typeof disableAdapter;
+    getAdapterState: typeof getAdapterState;
+    isActive: typeof isActive;
+};
+
+export default BLEAdvertiser;
