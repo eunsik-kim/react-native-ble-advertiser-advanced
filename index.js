@@ -5,4 +5,7 @@
 'use strict';
 
 import { NativeModules } from 'react-native';
-module.exports = NativeModules.BLEAdvertiser;
+
+const { BLEAdvertiser } = NativeModules;
+
+export default BLEAdvertiser;
